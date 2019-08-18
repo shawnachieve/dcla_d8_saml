@@ -14,6 +14,9 @@ $config['metadata.sources'] = [
   ['type' => 'flatfile', 'directory' =>  dirname(__DIR__) . '/metadata'],
 ];
 
+// Tell SimpleSAML where to find its encryption/TLS certificates.
+$config['certdir'] = dirname(__DIR__) . '/cert';
+
 // Setup the database connection for all parts of SimpleSAML.
 if (isset($_ENV['PLATFORM_RELATIONSHIPS'])) {
   $relationships = json_decode(base64_decode($_ENV['PLATFORM_RELATIONSHIPS']), TRUE);
