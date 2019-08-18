@@ -111,6 +111,18 @@ web:
                 '^/sites/default/files/(css|js)':
                     expires: 2w
 
+        '/simplesaml':
+            root: 'vendor/simplesamlphp/simplesamlphp/www'
+            allow: true
+            scripts: true
+            index:
+                - index.php
+
+# Tell platform.sh where the simplesaml configuration files are located at.
+variables:
+    env:
+        SIMPLESAMLPHP_CONFIG_DIR: /app/simplesamlphp/config
+
 # The configuration of scheduled execution.
 crons:
     drupal:
