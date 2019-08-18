@@ -48,6 +48,8 @@ if (isset($_ENV['PLATFORM_RELATIONSHIPS'])) {
 }
 
 // Set the salt value from the Platform.sh entropy value, provided for this purpose.
+// If not using platform.sh, you can generate this salt using:
+// LC_CTYPE=C tr -c -d '0123456789abcdefghijklmnopqrstuvwxyz' </dev/urandom | dd bs=32 count=1 2>/dev/null;echo
 if (isset($_ENV['PLATFORM_PROJECT_ENTROPY'])) {
   $config['secretsalt'] = $_ENV['PLATFORM_PROJECT_ENTROPY'];
 }
