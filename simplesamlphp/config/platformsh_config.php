@@ -4,6 +4,12 @@
  * Provides platform.sh specific configuration settings.
  */
 
+$config['technicalcontact_name'] = 'Shawn S. Smiley';
+$config['technicalcontact_email'] = 'shawn.smiley@achieveinternet.com';
+$config['timezone'] = 'America/Los_Angeles';
+$config['auth.adminpassword'] = $_ENV['SAMLADMINPW'];
+$config['enable.saml20-idp'] = TRUE;
+
 // Set SimpleSAML to log using error_log(), which on Platform.sh will
 // be mapped to the /var/log/app.log file.
 $config['logging.handler'] = 'errorlog';

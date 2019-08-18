@@ -1124,4 +1124,6 @@ $config = [
     'store.redis.prefix' => 'SimpleSAMLphp',
 ];
 
-include_once './platformsh_config.php';
+if (!empty($_ENV['PLATFORM_ENVIRONMENT'])) {
+  include_once './platformsh_config.php';
+}
