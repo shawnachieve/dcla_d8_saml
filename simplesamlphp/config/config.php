@@ -1124,6 +1124,8 @@ $config = [
     'store.redis.prefix' => 'SimpleSAMLphp',
 ];
 
+echo "<h1>Is this running?</h1>";
+die('is this running?');
 if (!empty($_ENV['PLATFORM_ENVIRONMENT'])) {
   include_once './platformsh_config.php';
 }
