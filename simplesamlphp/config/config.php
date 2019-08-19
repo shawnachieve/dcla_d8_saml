@@ -1123,7 +1123,7 @@ $config = [
      */
     'store.redis.prefix' => 'SimpleSAMLphp',
 ];
-echo('Is /simplesamlphp/config/config.php being loaded?');
+echo('<h1>Is /simplesamlphp/config/config.php being loaded?</h1>');
 if (!empty($_ENV['PLATFORM_ENVIRONMENT'])) {
-  include_once './platformsh_config.php';
+  require_once '/app/simplesamlphp/config/platformsh_config.php';
 }
