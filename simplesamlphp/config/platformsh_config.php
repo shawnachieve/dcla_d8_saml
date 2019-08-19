@@ -57,5 +57,3 @@ else {
   $config['secretsalt'] = 'mgmck4c18aro08beywv4zwv3zfv8lje4';
 }
 
-echo('<h1>Is /simplesamlphp/config/platformsh_config.php being loaded?</h1>');
-die("is this working?");
