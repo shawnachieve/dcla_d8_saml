@@ -118,6 +118,11 @@ web:
             index:
                 - index.php
 
+# Tell platform.sh where the simplesaml configuration files are located at.
+variables:
+    env:
+        SIMPLESAMLPHP_CONFIG_DIR: /app/simplesamlphp/config
+
 # The configuration of scheduled execution.
 crons:
     drupal:
