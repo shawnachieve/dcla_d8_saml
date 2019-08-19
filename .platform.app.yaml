@@ -119,6 +119,7 @@ web:
                 - index.php
 
 # Tell platform.sh where the simplesaml configuration files are located at.
+# This seems to need to be set both here and in .environment.yaml.
 variables:
     env:
         SIMPLESAMLPHP_CONFIG_DIR: /app/simplesamlphp/config
