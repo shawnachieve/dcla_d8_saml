@@ -1,0 +1,5 @@
+name: SAML Helper Module
+type: module
+description: Helper module to map custom user attributes.
+# core: 8.x
+package: Authentication

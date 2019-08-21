@@ -1,0 +1,16 @@
+<?php
+/**
+ * @file
+ * Enter file description.
+ */
+
+function saml_helper_simplesamlphp_auth_user_attributes(\Drupal\user\UserInterface $account, $attributes) {
+  $saml_first_name = $attributes['firstname'];
+  $saml_last_name = $attributes['lastname'];
+  if ($saml_first_name && $saml_last_name) {
+    $account->set('field_first_name', $saml_first_name);
+    $account->set('field_last_name', $saml_last_name);
+    return $account;
+  }
+  return FALSE;
+}
