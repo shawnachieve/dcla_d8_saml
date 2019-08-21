@@ -3,3 +3,7 @@ type: module
 description: Helper module to map custom user attributes.
 # core: 8.x
 package: Authentication
+dependencies:
+ - drupal:user
+ - externalauth:externalauth
+ - simplesamlphp_auth:simplesamlphp_auth
