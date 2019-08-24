@@ -57,3 +57,12 @@ else {
   $config['secretsalt'] = 'mgmck4c18aro08beywv4zwv3zfv8lje4';
 }
 
+// Security Config:
+$config['admin.protectindexpage'] = TRUE;
+$config['admin.protectmetadata'] = TRUE;
+$config['trusted.url.domains'] = ['test-t6dnbai-2jlngt4rcela6.us-2.platformsh.site', 'www.test-t6dnbai-2jlngt4rcela6.us-2.platformsh.site'];
+$config['showerrors'] = FALSE;
+$config['errorreporting'] = FALSE;
+$config['session.cookie.domain'] = '.test-t6dnbai-2jlngt4rcela6.us-2.platformsh.site';
+$config['session.cookie.secure'] = TRUE;
+$config['session.cookie.samesite'] = 'strict';
