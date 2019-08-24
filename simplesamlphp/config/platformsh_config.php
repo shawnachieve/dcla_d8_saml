@@ -65,4 +65,4 @@ $config['showerrors'] = FALSE;
 $config['errorreporting'] = FALSE;
 $config['session.cookie.domain'] = '.test-t6dnbai-2jlngt4rcela6.us-2.platformsh.site';
 $config['session.cookie.secure'] = TRUE;
-$config['session.cookie.samesite'] = 'strict';
+$config['session.cookie.samesite'] = 'Lax';
