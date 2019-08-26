@@ -53,9 +53,6 @@ if (isset($_ENV['PLATFORM_RELATIONSHIPS'])) {
 if (isset($_ENV['PLATFORM_PROJECT_ENTROPY'])) {
   $config['secretsalt'] = $_ENV['PLATFORM_PROJECT_ENTROPY'];
 }
-else {
-  $config['secretsalt'] = 'mgmck4c18aro08beywv4zwv3zfv8lje4';
-}
 
 // Security Config:
 $config['admin.protectindexpage'] = TRUE;
